@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, flash
+from flask import Flask, render_template, request, redirect, url_for, flash, send_from_directory
 
 app = Flask(__name__)
 
@@ -17,3 +17,11 @@ def contact():
 @app.route('/projects')
 def projects():
     return render_template('projects.html')
+
+@app.route('/static/<path:path>')
+def send_static(path):
+
+    return send_from_directory('static', path)
+
+if __name__ == "__main__":
+    app.run("0.0.0.0", port=8080)
