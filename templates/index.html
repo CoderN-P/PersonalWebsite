@@ -1,15 +1,19 @@
 {% extends "template.html" %}
 
 {% block main %}
-
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/css/arrow.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/static/js/scroll.js"></script>
+</head>
 <body>
     <div class="text-white bg-gradient-to-r from-blue-900 to-slate-900">
 
 <nav class="bg-slate-900 px-2 sm:px-4 py-2.5  fixed w-full z-20 top-0 left-0 border-b  border-gray-600">
   <div class="container flex flex-wrap items-center justify-between mx-auto">
-  <a href="https://flowbite.com/" class="flex items-center">
-      <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo">
-      <span class="self-center text-xl font-semibold whitespace-nowrap text-white">Flowbite</span>
+  <a href="#" class="flex items-center">
+    <img class="h-6 mr-3 sm:h-9 p-1  rounded-full ring-2 ring-gray-500" src="/static/images/codern_pfpimage.png" alt="Bordered avatar">
+      <span class="self-center text-xl font-semibold whitespace-nowrap text-white">Neel Parpia</span>
   </a>
   <div class="flex md:order-2">
       <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm rounded-lg md:hidden focus:outline-none focus:ring-2  text-gray-400 hover:bg-gray-700 focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
@@ -36,11 +40,19 @@
   </div>
 </nav>
 
-        <div class="flex flex-col items-center justify-center h-screen">
-            <h1 class="font-extrabold text-transparent text-8xl bg-clip-text font-bold bg-gradient-to-r from-sky-500 to-sky-200">Neel Parpia</h1>
-            <p class="text-xl">Middle School Developer</p>
-            <p class="text-xl">Stratford Preparatory Blackford</p>
-            <p class="text-xl">Class of 2027</p>
+        <div class="flex flex-col items-center justify-center h-screen" style="height:200%;" >
+            <div class="flex flex-col items-center" style="position: relative;top: 20%; -webkit-transform: translateY(-60%);-ms-transform: translateY(-60%);transform: translateY(-60%);">
+                <h1 class="font-extrabold text-transparent text-8xl bg-clip-text font-bold bg-gradient-to-r from-sky-500 to-sky-200">Neel Parpia</h1>
+                <p class="text-xl">Middle School Developer</p>
+                <p class="text-xl">Stratford Preparatory Blackford</p>
+                <p class="text-xl">Class of 2027</p>
+                <div class="downArrow bounce mt-8">
+      <img width="80" height="80" class="invert" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
+    </div>
+            </div>
+            <div class="scrolling-text">
+                <h1 class="text-8xl font-extrabold h1project" id="projects" style="left: 150vw;">My Projects</h1>
+            </div>
         </div>
     </div>
 </body>
