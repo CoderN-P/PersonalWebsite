@@ -12,6 +12,14 @@ $(document).on('scroll', function(){
            h.css("left", Math.max(150 - 0.2 * window.scrollY, 1) + "vw");
            prevScrollpos = window.scrollY;
 
+       }else{
+           var s = $(window).scrollTop(),
+              d = $(document).height(),
+              c = $(window).height();
+
+           var scrollPercent = ((window.scrollY-prevScrollpos) / (d - c)) * 100;
+
+           h.css('top', 20-scrollPercent+"%");
        }
    });
 
