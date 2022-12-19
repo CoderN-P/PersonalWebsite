@@ -9,10 +9,12 @@ $(document).on('scroll', function(){
         var centerX = offset.left + width / 2;
 
        if (centerX >  $(window).width() / 2 || window.scrollY < prevScrollpos){
+            $('#m').css('background-color', 'none');
            h.css("left", Math.max(150 - 0.2 * window.scrollY, 1) + "vw");
            prevScrollpos = window.scrollY;
 
        }else{
+           $('#m').css('background-color', '#541394');
            var s = $(window).scrollTop(),
               d = $(document).height(),
               c = $(window).height();
