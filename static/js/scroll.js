@@ -1,4 +1,5 @@
 let prevScrollpos = window.scrollY;
+let curscroll=0;
 $(document).on('scroll', function(){
        let h = $('#projects');
         var offset = h.offset();
@@ -8,13 +9,15 @@ $(document).on('scroll', function(){
 
         var centerX = offset.left + width / 2;
 
+
+
        if (centerX >  $(window).width() / 2 || window.scrollY < prevScrollpos){
-            $('#m').css('background-color', 'none');
+           curscroll = 0;
            h.css("left", Math.max(150 - 0.2 * window.scrollY, 1) + "vw");
            prevScrollpos = window.scrollY;
 
        }else{
-           $('#m').css('background-color', '#541394');
+
            var s = $(window).scrollTop(),
               d = $(document).height(),
               c = $(window).height();
@@ -22,6 +25,18 @@ $(document).on('scroll', function(){
            var scrollPercent = ((window.scrollY-prevScrollpos) / (d - c)) * 100;
 
            h.css('top', 20-scrollPercent+"%");
+            curscroll += s-prevScrollpos;
+            console.log(curscroll);
+           if (s < 860) {
+               if (curscroll + prevScrollpos < 860) {
+                   if (80 < curscroll) {
+                       document.getElementById('neb').src = '/static/images/nebulus2.png';
+                   } else {
+                       document.getElementById('neb').src = '/static/images/nebulus.png';
+                   }
+                   window.scrollTo(0, prevScrollpos);
+               }
+           }
        }
    });
 
