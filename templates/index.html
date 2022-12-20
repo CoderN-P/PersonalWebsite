@@ -6,6 +6,11 @@
     <link rel="stylesheet" type="text/css" href="/static/css/scrollText.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/static/js/scroll.js"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+</script>
 </head>
 <body>
     <div class="text-white bg-gradient-to-r from-blue-900 to-slate-900">
@@ -45,20 +50,20 @@
 </nav>
 
         <div id="m" class="flex flex-col items-center justify-center h-screen" style="height:200%;" >
-            <div class="flex flex-col items-center" style="position: relative;top: 20%; -webkit-transform: translateY(-60%);-ms-transform: translateY(-60%);transform: translateY(-60%);">
-                <h1 class="font-extrabold text-transparent text-8xl bg-clip-text font-bold bg-gradient-to-r from-sky-500 to-sky-200">Neel Parpia</h1>
-                <p class="text-xl">Middle School Developer</p>
-                <p class="text-xl">Stratford Preparatory Blackford</p>
-                <p class="text-xl">Class of 2027</p>
+            <div class="flex flex-col items-center" style="margin-top:80px; position: relative;top: 20%; -webkit-transform: translateY(-60%);-ms-transform: translateY(-60%);transform: translateY(-60%);">
+                <h1 class="font-extrabold text-transparent bg-clip-text font-bold bg-gradient-to-r from-sky-500 to-sky-200" style="font-size:12rem;">Neel Parpia</h1>
+                <p class="text-4xl font-extrabold">Middle School Developer</p>
+                <p class="text-4xl font-extrabold">Stratford Preparatory Blackford</p>
+                <p class="text-4xl font-extrabold">Class of 2027</p>
                 <div class="downArrow bounce mt-8">
       <img width="80" height="80" class="invert" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
     </div>
             </div>
             <div class="scrolling-text">
-                <h1 class="text-8xl font-extrabold h1project" id="projects" style="left: 150vw;top:20%">My Projects</h1>
+                <h1 class="text-8xl font-extrabold h1project" id="projects" style="left: 150vw;top:25%">My Projects</h1>
             </div>
 
-            <div class="flex flex-row items-center" style="width:80%;margin-bottom:500px;">
+            <div data-aos="fade-left fade-out" data-aos-duration="1000" class="flex flex-row items-center" style="width:80%;margin-bottom:100px;margin-right:110px;">
                 <div style=" width: 800px; margin: 20px; position: relative; display: inline-block; ">
                     <img id="neb" class="rounded-lg" src="/static/images/nebulus.png" style="height: 310px; width: 517px; margin-left: 20px;z-index:2;position:relative;">
                     <div style="background: linear-gradient(45deg, red, #2700ff); width: 500px;border-radius: 50%;height: 350px;filter: blur(60px); z-index: -10;margin-top: -350px;-webkit-animation: pulse 5s ease infinite;-moz-animation: pulse 5s ease infinite;animation: pulse 5s ease infinite; "></div>
@@ -73,6 +78,25 @@
                     </button></a>
 
             </div>
+
+
+        </div>
+             <div data-aos="fade-left fade-out" data-aos-duration="1000" class="flex flex-row items-center" style="width:80%;margin-bottom:50px;">
+                 <div class="flex flex-col items-start" style="width:calc(100% - 400px);margin-right:20px;">
+                    <h1 class="text-6xl font-extrabold">Smart Irrigation Controller</h1>
+                    <p class="text-4xl font-bold text-gray-200 ">Never worry about your plants again!</p>
+                    <p class="text-xl text-gray-400">I created this device as my science fair project in 7th grade. It uses a raspberry pi and soil moisture sensors to detect when your plant needs to be watered. It also has a website where you can control and monitor it!</p>
+                    <a href="https://github.com/CoderN-P/Science-Fair-2021-Project"><button class="text-base text-white bg-gradient-to-r from-red-400 to-pink-600 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2" style="margin-top:10px;">Github<svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" style="display: inline-block;">
+<path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+</svg>
+                    </button></a>
+
+            </div>
+                <div style=" width: 800px; margin: 20px; position: relative; display: inline-block; ">
+                    <img  class="rounded-lg" src="https://lh5.googleusercontent.com/Q7SQ6PFThw8EfLeVECUiCui8tBj9LgXej6YsmOSrqwyOQmsFHEwzwcOcniBE83zF0joCYyK4gGdbLNWQR_phLW5AxDvwmAUPS4P_4W_rVyKkbKIhOTsuLg4rlJzb88BS8ni3jKafYkwzz_lb4fsqmBgqzD-E-4Ice_bfg5r1awEFhGtXsgZdz7GdWXBT" style="height: 310px; width: 517px; margin-left: 20px;z-index:2;position:relative;">
+                    <div style="background: linear-gradient(45deg, red, #2700ff); width: 500px;border-radius: 50%;height: 350px;filter: blur(60px); z-index: -10;margin-top: -350px;-webkit-animation: pulse 5s ease infinite;-moz-animation: pulse 5s ease infinite;animation: pulse 5s ease infinite; "></div>
+                </div>
+
 
 
         </div>
