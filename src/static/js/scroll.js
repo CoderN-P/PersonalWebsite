@@ -1,4 +1,4 @@
-
+window.addEventListener('load', AOS.refresh)
 let prevScrollpos = window.scrollY;
 let curscroll=0;
 $(document).on('scroll', function(){
